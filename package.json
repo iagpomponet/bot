@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord-api-types": "^0.22.0",
+    "discord.js": "^11.6.0",
+    "puppeteer": "^10.2.0",
+    "puppeteer-extra": "^3.1.18",
+    "puppeteer-extra-plugin-adblocker": "^2.11.11",
+    "puppeteer-extra-plugin-stealth": "^2.7.8"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "devDependencies": {
+    "arrive": "^2.4.1"
+  }
+}
