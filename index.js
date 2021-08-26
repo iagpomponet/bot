@@ -11,8 +11,6 @@ puppeteer.use(StealthPlugin());
 async function main() {
   const browser = await puppeteer.launch({
     headless: true,
-    executablePath:
-      "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
     'args' : [
         '--no-sandbox',
         '--disable-setuid-sandbox'
