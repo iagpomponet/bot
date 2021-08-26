@@ -1,4 +1,4 @@
-const config = require("./config.json");
+require('dotenv/config')
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
@@ -10,7 +10,7 @@ puppeteer.use(StealthPlugin());
 
 async function main() {
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
   });
@@ -106,7 +106,9 @@ async function main() {
     console.log("msg :>> ", msg);
   });
 
-  client.login(config.BOT_TOKEN);
+  client.login(process.env.BOT_TOKEN);
 }
+
+console.log('process.env.BOT_TOKEN :>> ', process.env.BOT_TOKEN);
 
 main();

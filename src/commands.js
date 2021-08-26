@@ -17,8 +17,9 @@ function commands(message, server, command, playersNumber, playersMax) {
     }
   }
 
-  if (command == "show") {
-    message.channel.send("show :ok_hand:");
+ 
+  if (command == "treat") {
+    message.channel.send(":couplekiss:");
   }
 }
 
